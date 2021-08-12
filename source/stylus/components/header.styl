@@ -1,0 +1,81 @@
+.header
+  &__bg
+    background: linear-gradient(180deg, #012F75 7.6%, #2467CB 49.25%, #72C8EF 92.96%)
+
+  &__inner
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding-top: 70px
+
+    +above($breakpoints.xs)
+      padding-top: 50px
+
+
+  &__logo
+    margin-bottom: 86px
+    +above($breakpoints.xs)
+      margin-bottom: 160px
+
+  &__block-info
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-family: "Roboto"
+
+  &__title
+    color: $color-white
+    font-size: 24px
+    line-height: 32px
+    text-align: center
+    margin-bottom: 16px
+
+    +above($breakpoints.xs)
+      font-size: 52px
+      line-height: 61px
+      margin-bottom: 20px
+
+  &__description
+    font-size: 14px
+    line-height: 20px
+    text-align: center
+    color: $color-white
+    margin-bottom: 40px
+
+    +above($breakpoints.xs)
+      font-weight: 300
+      font-size: 24px
+      line-height: 32px
+
+  &__btn
+    padding: 15px 31px
+    margin-bottom: 127px
+    background-color: $color-primary
+    width: 248px
+    display: inline-block
+    border-radius: 10px
+
+    +above($breakpoints.xs)
+      padding: 18px 30px
+      margin-bottom: 133px
+      width: 268px
+
+  &__footer-img
+    background-image: url('../images/header-footer320.png')
+    background-repeat: repeat
+    height: 80px
+    +above($breakpoints.xs)
+      background-image: url('../images/header-footer.png')
+      background-repeat: repeat
+      height: 200px
+
+.btn
+  color: white
+  font-size: 16px;
+  line-height: 22px;
+
+  +above($breakpoints.xs)
+    font-size: 18px
+    line-height: 24px
