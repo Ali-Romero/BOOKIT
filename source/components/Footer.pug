@@ -46,9 +46,11 @@ footer.footer
                     | с 09:00 до 17:00
           .footer__social-icon
             .social-icon__facebook
-              +icon(name="facebook" width="24px" height="24px").mail-icon
+              a(href="#" aria-label="soc").social-icon-link
+                +icon(name="facebook" width="24px" height="24px").mail-icon
             .social-icon__instagram
-              +icon(name="instagram" width="24px" height="24px").mail-icon
+              a(href="#" aria-label="soc").social-icon-link
+                +icon(name="instagram" width="24px" height="24px").mail-icon
         .footer-contacts__form
           .form
             .form__title Обратная связь
@@ -69,8 +71,10 @@ footer.footer
               button.btn Отправить
         .footer__social-mobile
           .social-icon__facebook-mobile
-            +icon(name="facebook" width="32px" height="32px").mail-icon
+            a(href="#" aria-label="soc").social-icon-link
+              +icon(name="facebook" width="32px" height="32px").mail-icon
           .social-icon__instagram-mobile
-            +icon(name="instagram" width="32px" height="32px").mail-icon
+            a(href="#" aria-label="soc").social-icon-link
+             +icon(name="instagram" width="32px" height="32px").mail-icon
       .footer__copyright
             | Bookit © 2021 — дешевые авиабилеты
