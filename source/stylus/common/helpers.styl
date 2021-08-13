@@ -16,5 +16,13 @@
 .d-none
   display: none
 
+.d-xs-none
+  +above($breakpoints.xs)
+    display: none
+
 .d-block
   display: block
+
+.d-xs-block
+  +above($breakpoints.xs)
+    display: block

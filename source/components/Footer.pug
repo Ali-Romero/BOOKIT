@@ -2,42 +2,75 @@ footer.footer
   .footer__bg
     .wrapper.wrapper--md
       .footer__inner
-        .footer__title Контакты
-        .footer__description 
-          | Fill up the form and our Team will get back
-          | to you within 24 hours.
-        .footer-contacts
-          .footer-contacts__item
-            .footer-contacts__flex
-              .footer-contacts__icon
-                +icon(name="location" width="24px" height="24px").location-icon
-              .footer-contacts__text
-                | 720000, Кыргызстан, Бишкек,
-                | пр. Чингиза Айтматова 73/1
-          .footer-contacts__item
-            .footer-contacts__flex
-              .footer-contacts__icon
-                +icon(name="mail" width="24px" height="24px").mail-icon
-              .footer-contacts__text
-                | info@bookit.kg
-          .footer-contacts__item
-            .footer-contacts__flex
-              .footer-contacts__icon
-                +icon(name="phone" width="24px" height="24px").phone-icon
-              .footer-contacts__text
-                | +996 (554) 332-233
-          .footer-contacts__item
-            .footer-contacts__flex
-              .footer-contacts__icon
-                +icon(name="time" width="24px" height="24px").time-icon
-              .footer-contacts__text
-                | С понедельника по пятницу
-              .footer-contacts__text-time
-                | с 09:00 до 18:00
-            .footer-contacts__flex
-              .footer-contacts__icon
-                +icon(name="time" width="24px" height="24px").time-icon
-              .footer-contacts__text
-                | Суббота и воскресенье
-              .footer-contacts__text-time
-                | с 09:00 до 17:00
+        .footer__contacts-container
+          .footer__title Контакты
+          .footer__description 
+            | Fill up the form and our Team will get back
+            | to you within 24 hours.
+          .footer-contacts
+            .footer-contacts__item
+              .footer-contacts__flex
+                .footer-contacts__icon
+                  +icon(name="location" width="24px" height="24px").location-icon
+                .footer-contacts__text
+                  | 720000, Кыргызстан, Бишкек,
+                  | пр. Чингиза Айтматова 73/1
+            .footer-contacts__item
+              .footer-contacts__flex
+                .footer-contacts__icon
+                  +icon(name="mail" width="24px" height="24px").mail-icon
+                .footer-contacts__text
+                  | info@bookit.kg
+            .footer-contacts__item
+              .footer-contacts__flex
+                .footer-contacts__icon
+                  +icon(name="phone" width="24px" height="24px").phone-icon
+                .footer-contacts__text
+                  | +996 (554) 332-233
+            .footer-contacts__item
+              .footer-contacts__flex
+                .footer-contacts__icon
+                  +icon(name="time" width="24px" height="24px").time-icon
+                .footer-contacts__text-container
+                  .footer-contacts__text-small
+                    | С понедельника по пятницу
+                  .footer-contacts__text-time
+                    | с 09:00 до 18:00
+              .footer-contacts__flex
+                .footer-contacts__icon
+                  +icon(name="time" width="24px" height="24px").time-icon
+                .footer-contacts__text-container
+                  .footer-contacts__text-small
+                    | Суббота и воскресенье
+                  .footer-contacts__text-time
+                    | с 09:00 до 17:00
+          .footer__social-icon
+            .social-icon__facebook
+              +icon(name="facebook" width="24px" height="24px").mail-icon
+            .social-icon__instagram
+              +icon(name="instagram" width="24px" height="24px").mail-icon
+        .footer-contacts__form
+          .form
+            .form__title Обратная связь
+            .form__input-wrapper
+              .form__input-box
+                input(name="name" type="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input
+                span.form__input-label Имя
+              .form__input-box
+                input(name="phone" type="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input
+                span.form__input-label Телефон
+              .form__input-box
+                input(name="email" type="email" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input
+                span.form__input-label E-mail
+              .form__input-box.form__input-box--last-child
+                textarea(name="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input.form__input--text
+                span.form__input-label Сообщение
+            .form__btn
+              button.btn Отправить
+        .footer__social-mobile
+          .social-icon__facebook-mobile
+            +icon(name="facebook" width="32px" height="32px").mail-icon
+          .social-icon__instagram-mobile
+            +icon(name="instagram" width="32px" height="32px").mail-icon
+      .footer__copyright
+            | Bookit © 2021 — дешевые авиабилеты
