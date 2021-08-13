@@ -205,18 +205,23 @@
   &__input[value]:not([value=""]) + &__input-label,
   &__input:focus + &__input-label
     top: -11px
+
     +above($breakpoints.sm)
       top: -10
+
   &__btn
     border-radius: 10px
     background-color: $color-primary
     padding: 15px 0
     text-align: center
     transition: 0.2s
+
     +above($breakpoints.sm)
       padding: 18px 0
+
     &:hover
       box-shadow: 0px 0px 12px 1px rgba(123, 128, 123, 0.76)
+
   &__input-label
     position: absolute
     left: 0
@@ -231,16 +236,18 @@
     margin-bottom: 8px
     margin-top: 10px
     transition: 0.2s
+
     +above($breakpoints.sm)
       font-size: 16px
       line-height: 22px
       margin-left: 20px
       margin-bottom: 8px
       margin-top: 17px
+
   &__input:focus + &__input-label
     color: $color-white-blue
     font-size: 12px
+
     +above($breakpoints.sm)
       font-size: 14px
       margin-bottom: 20px
-
