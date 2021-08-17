@@ -52,21 +52,21 @@ footer.footer
               a(href="#" aria-label="soc").social-icon-link
                 +icon(name="instagram" width="24px" height="24px").mail-icon
         .footer-contacts__form
-          .form
+          form.form
             .form__title Обратная связь
             .form__input-wrapper
               .form__input-box
-                input(name="name" type="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input
-                span.form__input-label Имя
+                input(name="name" type="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form-input
+                span.form-input__label Имя
               .form__input-box
-                input(name="phone" type="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input
-                span.form__input-label Телефон
+                input(name="phone" type="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form-input
+                span.form-input__label Телефон
               .form__input-box
-                input(name="email" type="email" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input
-                span.form__input-label E-mail
+                input(name="email" type="email" placeholder="" onkeyup="this.setAttribute('value', this.value);").form-input
+                span.form-input__label E-mail
               .form__input-box.form__input-box--last-child
-                textarea(name="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form__input.form__input--text
-                span.form__input-label Сообщение
+                textarea(name="text" placeholder="" onkeyup="this.setAttribute('value', this.value);").form-input.form-input--text
+                span.form-input__label Сообщение
             .form__btn
               button.btn Отправить
         .footer__social-mobile

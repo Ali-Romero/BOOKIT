@@ -1,6 +1,22 @@
 .header
   &__bg
     background: linear-gradient(180deg, #012F75 7.6%, #2467CB 49.25%, #72C8EF 92.96%)
+    background-repeat: repeat
+    position: relative
+
+  &__relative-container
+    position relative
+    max-width: 320px
+    margin: 0 auto
+    min-height: 640px
+    +above($breakpoints.xs)
+      max-width: 1347px
+      min-height: 997px
+
+  &__img-rocket
+    position: absolute
+    right: 0
+    bottom: 0
 
   &__inner
     display: flex
@@ -68,13 +84,24 @@
 
   &__footer-img
     background-image: url('../images/header-footer320.png')
-    background-repeat: repeat
+    background-repeat: repeat-x
     height: 80px
 
     +above($breakpoints.xs)
       background-image: url('../images/header-footer.png')
-      background-repeat: repeat
       height: 200px
+      width: 100%
+      position: absolute
+      bottom: 0
+
+.header-rocket
+  +above($breakpoints.xs)
+    width: 469px
+    height: 471px
+
+  +above($breakpoints.md)
+    width: 574px
+    height: 593px
 
 .btn
   color: $color-white
